@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title title style="color: blue;" style="background-color: aqua;">Text Encryption/Decryption</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: blue;" style="background-color: aqua;">Text Encryption/Decryption </h1>
+        <div class="input-container">
+            <textarea id="inputText" placeholder="Enter text"></textarea>
+        </div>
+        <div class="button-container">
+            <button id="encryptBtn" class="blue-btn" style="color: brown;">Encrypt</button>
+            <button id="decryptBtn" class="red-btn" style="color: brown;">Decrypt</button>
+            <button id="resetBtn" class="black-btn" style="color: brown;" style="">Reset</button>
+        </div>
+        <div class="output-container">
+            <div>
+                <h1 style="color: blue;" >Output</h1>
+                <textarea id="outputText" readonly></textarea>
+            </div>
+        </div>
+        <div class="signature"> <h2>~ Urmi Vora</h2></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
